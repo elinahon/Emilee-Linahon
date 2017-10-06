@@ -1,13 +1,17 @@
 body {
-	color: teal;
+	color: white;
 }
 
-img {
-	background-size: 50vw 90vh;
-	background-repeat: no-repeat;
-	background-position: center;
+html {
+	background: url("ps.jpg")no-repeat top left fixed; 
+	background-size: cover;
+
 }
 
 #NameTitle {
-	font-size:72px;
+	font-size:90px;
+}
+
+#Roles {
+	font-size:30px;
 }
