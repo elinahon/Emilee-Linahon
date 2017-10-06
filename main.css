@@ -1,0 +1,13 @@
+body {
+	color: teal;
+}
+
+img {
+	background-size: 50vw 90vh;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+#NameTitle {
+	font-size:72px;
+}
