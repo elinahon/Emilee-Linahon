@@ -3,17 +3,45 @@
 	<head>
 		<title>Emilee Linahon</title>
 		<link href="main.css" rel="stylesheet">
+
 	</head>
 	<body>
-		<h1 id="NameTitle">Emilee <br> Linahon</h1>
-		<h2 id="Roles">Front-End Developer//<br>Interpreter//Innovator</h2>
-		<a href="https://www.linkedin.com/in/emilee-linahon-09620529/">LinkedIn</a>
-		<p>
-			Just some thoughts on what to include--
-		</p>
-		<h4>Info</h4>
-		<p>Basically just include all of my past work experience (pull from LinkedIn?)</p>
-		<h4>Profile</h4>
-		<p>Just some musings, not official content yet: Include work summary and "outside of work" summary.</p>
+		<div class="container">
+			<div class="row">
+				<div id="col1" class="col-sm-4 col-xs-4">
+					<h1 id="NameTitle">Emilee <br> Linahon</h1>
+					<h2 id="Roles">Front-End Developer//<br>Interpreter//Innovator</h2>
+					<a href="https://www.linkedin.com/in/emilee-linahon-09620529/">LinkedIn</a>
+					<p>
+						Just some thoughts on what to include--
+					</p>
+					<h4>Info</h4>
+				</div>
+				<div id="col2" class="col-sm-0 col xs-0">
+					<p>Nothing</p>
+				</div>
+				<div id="col3" class="col-sm-8 col-xs-8">
+					<div class="tab">
+					  <button class="tablinks" onclick="openCity(evt, 'Profile')" id="defaultOpen">Profile</button>
+					  <button class="tablinks" onclick="openCity(evt, 'WorkHistory')">Work History</button>
+					</div>
+
+					<div id='Profile' class="tabcontent">
+					  <h3>Summary</h3>
+					  <p>Just some musings, not official content yet: Include work summary and "outside of work" summary.</p>
+					</div>
+
+					<div id='WorkHistory' class="tabcontent">
+					  <h3>Industry Experience</h3>
+					  <p>Basically just include all of my past work experience (pull from LinkedIn?)</p> 
+					</div>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript" src="..js/jquery-3.2.1.js"></script>
+		<script>
+			// Get the element with id="defaultOpen" and click on it
+			document.getElementById("defaultOpen").click();
+		</script>
 	</body>
 </html>

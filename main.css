@@ -1,17 +1,209 @@
 body {
+  background-image: url(ps.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
 	color: white;
 }
 
-html {
-	background: url("ps.jpg")no-repeat top left fixed; 
-	background-size: cover;
-
+#col2 {
+	visibility: hidden;
 }
 
-#NameTitle {
-	font-size:90px;
+/* Style the tab */
+div.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
 }
 
-#Roles {
-	font-size:30px;
+/* Style the buttons inside the tab */
+div.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+}
+
+/* Change background color of buttons on hover */
+div.tab button:hover {
+    background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+div.tab button.active {
+    background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+	display: ;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+
+@media screen and (min-width: 768px) {
+	#NameTitle {
+		font-size: 72px;
+	}
+	#Roles {
+		font-size: 20px;
+	}
+	#col1 {
+		border-radius: 0px;
+		float: left;
+		padding: 0px;
+		margin: 0px;
+		width: 26%;
+	}
+	#col2 {
+		border-radius: 0px;
+		float: left;
+		padding: 0px;
+		margin: 0px;
+		width: 42%;
+	}
+	#col3 {
+		border-radius: 0px;
+		float: left;
+		padding: 0px;
+		margin: 0px;
+		width: 32%;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	#NameTitle {
+		font-size: 100px;
+	}
+	#Roles {
+		font-size: 27px;
+	}
+	#col1 {
+		border-radius: 0px;
+		float: left;
+		padding: 0px;
+		margin: 0px;
+		width: 26%;
+	}
+	#col2 {
+		border-radius: 0px;
+		float: left;
+		padding: 0px;
+		margin: 0px;
+		width: 41%;
+	}
+	#col3 {
+		border-radius: 0px;
+		float: left;
+		padding: 0px;
+		margin: 0px;
+		width: 33%;
+	}
+}
+
+@media screen and (min-width: 1440px) {
+	#NameTitle {
+		font-size: 123px;
+	}
+	#Roles {
+		font-size: 35px;
+	}
+	#col1 {
+		border-radius: 0px;
+		float: left;
+		padding: 0px;
+		margin: 0px;
+		width: 26%;
+	}
+	#col2 {
+		border-radius: 0px;
+		float: left;
+		padding: 0px;
+		margin: 0px;
+		width: 36%;
+	}
+	#col3 {
+		border-radius: 0px;
+		float: left;
+		padding: 0px;
+		margin: 0px;
+		width: 38%;
+	}
+}
+
+@media screen and (min-width: 2560px) {
+	#NameTitle {
+		font-size: 190px;
+	}
+	#Roles {
+		font-size: 57px;
+	}
+	#col1 {
+		border-radius: 0px;
+		float: left;
+		padding: 0px;
+		margin: 0px;
+		width: 26%;
+	}
+	#col2 {
+		border-radius: 0px;
+		float: left;
+		padding: 0px;
+		margin: 0px;
+		width: 36%;
+	}
+	#col3 {
+		border-radius: 0px;
+		float: left;
+		padding: 0px;
+		margin: 0px;
+		width: 38%;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	body {
+		background-image: url(mini.jpg);
+	}
+	#NameTitle {
+		font-size: 54px;
+	}
+
+	#Roles {
+		font-size: 20px;
+	}
+	#col1 {
+		border-radius: 0px;
+		float: left;
+		padding: 0px;
+		margin: 0px;
+		width: 47%;
+	}
+	#col2 {
+		border-radius: 0px;
+		float: left;
+		padding: 0px;
+		margin: 0px;
+		width: 6%;
+	}
+	#col3 {
+		border-radius: 0px;
+		float: left;
+		padding: 0px;
+		margin: 0px;
+		width: 47%;
+	}
+}
+
+.row {
+	background: none;
+}
+
+footer {
+	clear: both;
 }
