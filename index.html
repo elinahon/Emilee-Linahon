@@ -7,41 +7,46 @@
 	</head>
 	<body>
 		<div class="container">
-			<div class="row">
-				<div id="col1" class="col-sm-4 col-xs-4">
-					<h1 id="NameTitle">Emilee <br> Linahon</h1>
-					<h2 id="Roles">Front-End Developer//<br>Interpreter//Innovator</h2>
-					<a href="https://www.linkedin.com/in/emilee-linahon-09620529/">LinkedIn</a>
-					<p>
-						Just some thoughts on what to include--
-					</p>
-					<h4>Info</h4>
-				</div>
-				<div id="col2" class="col-sm-0 col xs-0">
-					<p>Nothing</p>
-				</div>
-				<div id="col3" class="col-sm-8 col-xs-8">
-					<div class="tab">
-					  <button class="tablinks" onclick="openCity(evt, 'Profile')" id="defaultOpen">Profile</button>
-					  <button class="tablinks" onclick="openCity(evt, 'WorkHistory')">Work History</button>
-					</div>
-
-					<div id='Profile' class="tabcontent">
-					  <h3>Summary</h3>
-					  <p>Just some musings, not official content yet: Include work summary and "outside of work" summary.</p>
-					</div>
-
-					<div id='WorkHistory' class="tabcontent">
-					  <h3>Industry Experience</h3>
-					  <p>Basically just include all of my past work experience (pull from LinkedIn?)</p> 
-					</div>
-				</div>
+      <div id="col1">
+        <h1 id="NameTitle">Emilee <br> Linahon</h1>
+        <h2 id="Roles">Social Media Manager//<br>Interpreter//Innovator</h2>
+        <a href="https://www.linkedin.com/in/emilee-linahon-09620529/" target="blank">
+          <img src="LinkedIn.png" alt="LinkedIn Logo">
+        </a>
+      </div>
+      <div id="col2">
+        <p>Nothing</p>
+      </div>
+      <div id="col3">
+        <div class="tab">
+          <button class="tablinks" onclick="showProfile()" id="prof">Profile</button>
+          <button class="tablinks" onclick="showWorkHistory()" id="wh">Work History</button>
+        </div>	
+          <div id='Profile' class="tabcontent">
+            <h3>Summary</h3>
+            <p>Born and raised in Iowa (corn state), I studied at the University of Iowa for two years before transferring. I graduated from the Rochester Institute of Technology (RIT) in upstate New York, and later went back for my M.B.A.
+              <br><br>When I’m not working, I enjoy reading, cooking/eating (foodie for life!), and learning new languages for my travels around the world. I love to meet new people and learn new things, so please feel free to say hello and connect with me on LinkedIn!
+              <br><br>I am very passionate about bringing people together, especially by breaking down communication and cultural barriers, which led me to interpreting. I decided to pursue marketing for a more active role in decision-making, as interpreters have to be neutral participants. Along the way, I picked up some technical skills to allow me to build this website, and I'm still learning and experimenting!                
+            </p>
+          </div>
+          <div id='WorkHistory' class="tabcontent">
+            <h3>Industry Experience</h3>
+            <p>Since relocating, I have been interpreting courses at the various locations of the San Diego Community College District.
+              <br><br>In Rochester, I was a part-time social media manager at Soul Juicin, working with Facebook, Twitter, Instagram, and YouTube.
+              <br><br>While in grad school and working at Soul Juicin, I also worked full-time at RIT as an interpreter on the science/engineering team.
+              <br><br>Once I graduated from undergrad, I interpreted as a freelancer before being hired at RIT.
+              <br><br>While studying at RIT, I became student manager of Artesano Cafe, then worked as a student interpreter and scheduler.
+              <br><br>For detailed information and skills, please look at my LinkedIn.
+            </p> 
+          </div>
 			</div>
-		</div>
-		<script type="text/javascript" src="..js/jquery-3.2.1.js"></script>
-		<script>
-			// Get the element with id="defaultOpen" and click on it
-			document.getElementById("defaultOpen").click();
-		</script>
+		</div>			
+    <script type="text/javascript" src="main.js"></script>
+    <script>
+      document.getElementById("prof").click();
+    </script>
+    <script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
+    <script src="//platform.linkedin.com/in.js" type="text/javascript"> lang: en_US</script>
+    <script type="IN/Share" data-url="https://www.linkedin.com/in/emileelinahon/"></script>
 	</body>
 </html>
