@@ -6,7 +6,11 @@ body {
 	color: white;
 	height: 100vh;
 	width: 100vw;
-	overflow: hidden;
+	overflow: scroll;
+}
+
+.little {
+	visibility: hidden;
 }
 
 #col2 {
@@ -19,7 +23,7 @@ body {
 
 /* Tab */
 div.tab {
-    border: 1px solid #ccc;
+	border-radius: 10px 10px 0 0;
 	background-color: #f1f1f1;
 	display: flex;
 	overflow: hidden;
@@ -52,6 +56,7 @@ div.tab button.active {
 
 .tabcontent {
 	background: white;
+	border-radius: 0 0 10px 10px;
 	color: black;
     padding: 6px 12px;
     border: 1px solid #ccc;
@@ -67,9 +72,15 @@ div.tab button.active {
 	display: none;
 }
 
-@media screen and (min-width: 768px) {
+@media only screen 
+	and (min-device-width: 320px) 
+	and (max-device-width: 833px) {
+	
+	body {
+		background-image: url(mini.jpg);
+	}
 	#NameTitle {
-		font-size: 72px;
+		font-size: 65px;
 	}
 	#Roles {
 		font-size: 20px;
@@ -79,55 +90,70 @@ div.tab button.active {
 		float: left;
 		padding: 0px;
 		margin: 0px;
-		width: 26%;
+		width: 47%;
+	}
+	.little {
+		visibility: visible;
 	}
 	#col2 {
 		border-radius: 0px;
 		float: left;
 		padding: 0px;
 		margin: 0px;
-		width: 42%;
+		width: 2%;
 	}
 	#col3 {
 		border-radius: 0px;
 		float: left;
 		padding: 0px;
 		margin: 0px;
-		width: 32%;
+		width: 51%;
 	}
-}
+  }
 
-@media screen and (min-width: 1024px) {
+@media only screen 
+	and (min-device-width: 834px) 
+	and (max-device-width: 1399px) {
+
+	body {
+		background-image: url(mini.jpg);
+	}
 	#NameTitle {
-		font-size: 100px;
+		font-size: 120px;
 	}
 	#Roles {
-		font-size: 27px;
+		font-size: 34px;
 	}
 	#col1 {
 		border-radius: 0px;
 		float: left;
 		padding: 0px;
 		margin: 0px;
-		width: 26%;
+		width: 30%;
+	}
+	.little {
+		visibility: visible;
 	}
 	#col2 {
 		border-radius: 0px;
 		float: left;
 		padding: 0px;
 		margin: 0px;
-		width: 41%;
+		width:15%;
 	}
 	#col3 {
 		border-radius: 0px;
 		float: left;
 		padding: 0px;
 		margin: 0px;
-		width: 33%;
+		width: 55%;
 	}
 }
 
-@media screen and (min-width: 1440px) {
+@media only screen 
+	and (min-device-width: 1440px)
+	and (max-device-width: 2000px) {
+
 	#NameTitle {
 		font-size: 123px;
 	}
@@ -157,7 +183,9 @@ div.tab button.active {
 	}
 }
 
-@media screen and (min-width: 2560px) {
+@media only screen
+	and (min-device-width: 2001px) {
+	
 	#NameTitle {
 		font-size: 190px;
 	}
@@ -184,40 +212,6 @@ div.tab button.active {
 		padding: 0px;
 		margin: 0px;
 		width: 38%;
-	}
-}
-
-@media screen and (max-width: 767px) {
-	body {
-		background-image: url(mini.jpg);
-	}
-	#NameTitle {
-		font-size: 54px;
-	}
-
-	#Roles {
-		font-size: 20px;
-	}
-	#col1 {
-		border-radius: 0px;
-		float: left;
-		padding: 0px;
-		margin: 0px;
-		width: 47%;
-	}
-	#col2 {
-		border-radius: 0px;
-		float: left;
-		padding: 0px;
-		margin: 0px;
-		width: 6%;
-	}
-	#col3 {
-		border-radius: 0px;
-		float: left;
-		padding: 0px;
-		margin: 0px;
-		width: 47%;
 	}
 }
 
