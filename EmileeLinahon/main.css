@@ -1,18 +1,3 @@
-body {
-	background-image: url(PS.jpg);
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-	background-size: cover;
-	color: white;
-	height: 100vh;
-	width: 100vw;
-	overflow: scroll;
-}
-
-.little {
-	visibility: hidden;
-}
-
 #col2 {
 	visibility: hidden;
 }
@@ -78,6 +63,13 @@ div.tab button.active {
 	
 	body {
 		background-image: url(mini.jpg);
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		background-size: cover;
+		color: white;
+		height: 100vh;
+		width: 100vw;
+		overflow: scroll;
 	}
 	#NameTitle {
 		font-size: 65px;
@@ -117,6 +109,13 @@ div.tab button.active {
 
 	body {
 		background-image: url(mini.jpg);
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		background-size: cover;
+		color: white;
+		height: 100vh;
+		width: 100vw;
+		overflow: scroll;
 	}
 	#NameTitle {
 		font-size: 120px;
@@ -154,6 +153,16 @@ div.tab button.active {
 	and (min-device-width: 1440px)
 	and (max-device-width: 2000px) {
 
+	body {
+		background-image: url(PS.jpg);
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		background-size: cover;
+		color: white;
+		height: 100vh;
+		width: 100vw;
+		overflow: scroll;
+	}	
 	#NameTitle {
 		font-size: 123px;
 	}
@@ -166,6 +175,9 @@ div.tab button.active {
 		padding: 0px;
 		margin: 0px;
 		width: 26%;
+	}
+	.little {
+		visibility: hidden;
 	}
 	#col2 {
 		border-radius: 0px;
@@ -185,7 +197,17 @@ div.tab button.active {
 
 @media only screen
 	and (min-device-width: 2001px) {
-	
+
+	body {
+		background-image: url(PS.jpg);
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		background-size: cover;
+		color: white;
+		height: 100vh;
+		width: 100vw;
+		overflow: scroll;
+	}
 	#NameTitle {
 		font-size: 190px;
 	}
@@ -198,6 +220,9 @@ div.tab button.active {
 		padding: 0px;
 		margin: 0px;
 		width: 26%;
+	}
+	.little {
+		visibility: hidden;
 	}
 	#col2 {
 		border-radius: 0px;
